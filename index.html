@@ -34,7 +34,7 @@
         <span id="place-name" class="title"></span><br>
     </div>
     <script>
-    var infowindow;
+    const infowindow;
     var map;
     var pMarker = [];
     var dirDisplay;
@@ -70,7 +70,7 @@
         var infowindowContent = document.getElementById('infowindow-content');
         infowindow.setContent(infowindowContent);
 
-        var marker = new google.maps.Marker({
+        const marker = new google.maps.Marker({
             map: map,
             position: initialLocation,
             anchorPoint: new google.maps.Point(0, -29)
